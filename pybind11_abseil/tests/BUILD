@@ -1,7 +1,7 @@
 # Tests and examples for pybind11_abseil.
 
 load("@pybind11_bazel//:build_defs.bzl", "pybind_extension", "pybind_library")
-load("@pypi//:requirements.bzl", "requirement")
+load("@pybind11_abseil_pypi//:requirements.bzl", "requirement")
 
 licenses(["notice"])
 

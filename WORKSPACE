@@ -86,7 +86,7 @@ python_register_multi_toolchains(
 load("@python//:pip.bzl", "multi_pip_parse")
 
 multi_pip_parse(
-    name = "pypi",
+    name = "pybind11_abseil_pypi",
     default_version = DEFAULT_PYTHON,
     python_interpreter_target = {
         "3.12": "@python_3_12_host//:python",
@@ -104,7 +104,7 @@ multi_pip_parse(
     },
 )
 
-load("@pypi//:requirements.bzl", "install_deps")
+load("@pybind11_abseil_pypi//:requirements.bzl", "install_deps")
 install_deps()
 
 ## `pybind11_bazel`
