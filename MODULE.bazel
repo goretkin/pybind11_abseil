@@ -23,7 +23,7 @@ SUPPORTED_PYTHON_VERSIONS = [
     "3.8",
 ]
 
-DEFAULT_PYTHON = "3.11"
+DEFAULT_PYTHON = "3.10"
 
 python = use_extension("@rules_python//python/extensions:python.bzl", "python", dev_dependency = True)
 

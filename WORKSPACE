@@ -69,7 +69,7 @@ py_repositories()
 load("@rules_python//python/pip_install:repositories.bzl", "pip_install_dependencies")
 pip_install_dependencies()
 
-DEFAULT_PYTHON = "3.11"
+DEFAULT_PYTHON = "3.10"
 
 python_register_multi_toolchains(
     name = "python",
